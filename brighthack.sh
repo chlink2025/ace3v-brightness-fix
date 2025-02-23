@@ -11,18 +11,9 @@ BRIGHTNESS=$(cat ${BRIGHTNESS_FILE})
 
 #echo $BRIGHTNESS
 
-if [[ ${BRIGHTNESS} == 4 ]]; then
-
-  echo 1 > ${BRIGHTNESS_FILE}
-
-elif [[ ${BRIGHTNESS} == 8 ]]; then
-
-  echo 2 > ${BRIGHTNESS_FILE}
-
-elif [[ ${BRIGHTNESS} == 12 ]]; then
-
-  echo 5 > ${BRIGHTNESS_FILE}
-
+# 明るさが8未満なら8に設定
+if [ "$BRIGHTNESS" -lt 8 ]; then
+  echo 8 > ${BRIGHTNESS_FILE}
 fi
 
 exit 0

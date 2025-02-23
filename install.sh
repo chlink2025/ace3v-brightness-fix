@@ -123,11 +123,11 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "       OP7T BrightHack         "
+  ui_print "       Ace3V BrightFix         "
   ui_print "                               "
-  ui_print "        by @geofferey          "
+  ui_print "      by @spring_dot_run       "
   ui_print "                               "
-  ui_print " https://github.com/geofferey  "
+  ui_print " https://github.com/frost-1256 "
   ui_print "*******************************"
 }
 
