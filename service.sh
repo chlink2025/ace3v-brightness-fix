@@ -23,6 +23,15 @@ until [[ $(getprop sys.boot_completed) = 1 ]] && [[ $(getprop dev.bootcomplete) 
 
 done
 
-inotifyd ${BRIGHTHACK_EXEC} ${BRIGHTNESS_FILE}:/w
+while true; do
+  BRIGHTNESS=$(cat ${BRIGHTNESS_FILE})
+
+  # 明るさが8未満なら8に設定
+  if [ "$BRIGHTNESS" -lt 8 ]; then
+    echo 8 > ${BRIGHTNESS_FILE}
+  fi
+
+
+done
 
 exit 0
