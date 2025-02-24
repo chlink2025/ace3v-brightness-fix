@@ -148,7 +148,8 @@ mount_mirrors() {
 
 # Credits
 ui_print "**************************************"
-ui_print "*   MMT Extended by Zackptg5 @ XDA   *"
+ui_print "* Ace3V BrightFix by @spring_dot_run *"
+ui_print "*      Template by MMT Extended      *"
 ui_print "**************************************"
 ui_print " "
 
