@@ -28,7 +28,7 @@ while true; do
 
   # 明るさが8未満なら8に設定
   if [ "$BRIGHTNESS" -lt 300 ]; then
-    echo 350 > ${BRIGHTNESS_FILE}
+    echo 300 > ${BRIGHTNESS_FILE}
   fi
 
 
