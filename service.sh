@@ -27,8 +27,8 @@ while true; do
   BRIGHTNESS=$(cat ${BRIGHTNESS_FILE})
 
   # 明るさが8未満なら8に設定
-  if [ "$BRIGHTNESS" -lt 12 ]; then
-    echo 12 > ${BRIGHTNESS_FILE}
+  if [ "$BRIGHTNESS" -lt 300 ]; then
+    echo 350 > ${BRIGHTNESS_FILE}
   fi
 
 
